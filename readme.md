@@ -1,4 +1,4 @@
-##create ipset
+## create ipset
 ipset create myset-ip hash:ip
 
 ## add to ip set from log, variable params is '-n 100' and 'if($1>6'
