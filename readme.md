@@ -14,4 +14,4 @@ while true; do netstat -ntup | grep SYN | awk '{print $5}' | cut -d: -f1 | sort 
 watch -n 1 "netstat -nt | grep TIME_WAIT | wc -l"
 
 net.ipv4.tcp_fin_timeout=30
-net.ipv4.tcp_tw_recycle = 1
+net.ipv4.tcp_tw_recycle = 1 
